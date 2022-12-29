@@ -48,9 +48,16 @@ public class Zadatak6 {
             return euro * 62.98;
         }  else {
             return 0;
+
+        }
+
         }
     }
-}
+
+
+
+
+
 
 
 
