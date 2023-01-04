@@ -6,7 +6,8 @@ package p27_12_2022;
 ////		ime i prezime vlasnika
 ////		stanje na racunu
 ////		U mainu kreirati minimum dva racuna sa pratecim podacima i ostampati podatke za svaki objekat.
-//Dopuniti zadatak tako da se vrsi transakcija sa prvog na drugi racun. Korisnik unosi svotu koja se skida sa prvog i prebacuje na drugi racun.
+//      Dopuniti zadatak tako da se vrsi transakcija sa prvog na drugi racun.
+//      Korisnik unosi svotu koja se skida sa prvog i prebacuje na drugi racun.
 //
 //
 //

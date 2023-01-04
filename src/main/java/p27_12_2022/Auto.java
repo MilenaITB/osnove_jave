@@ -34,12 +34,15 @@ public class Auto {
     //     MILANOVO REŠENJE
 
 
- //   public class Auto {
+    //   public class Auto {
 //    ime i prezime vozaca
 //    marku automobila
 //    broj vrata
 //    potrosnju na 100km (npr: 10)
 //    trenutnu brzinu kojom se auto krece
+
+
+
 
         public String vozac;
         public String marka;
@@ -54,8 +57,8 @@ public class Auto {
 
         public void stampaj() {
             System.out.println(this.vozac + "\n" +
-                    marka + " - "+this.brojVrata+"-ro vrata\n" +
-                    "Sa potrosnjom od "+this.fabrickaPotrosnja+" l na 100km\n" +
+                    marka + " - " + this.brojVrata + "-ro vrata\n" +
+                    "Sa potrosnjom od " + this.fabrickaPotrosnja + " l na 100km\n" +
                     this.trenutnaBrzina + " km/h je trenutna brzina.\n");
         }
 
@@ -67,7 +70,7 @@ public class Auto {
             return this.trenutnaBrzina > ogranicenje;
         }
 
-        public int kazna (int ogracenje) {
+        public int kazna(int ogracenje) {
 //        55 - 50
 //        int prekoracenje = this.trenutnaBrzina - ogracenje;
 //        if (prekoracenje > 0) {
@@ -97,7 +100,7 @@ public class Auto {
 //        } else {
 //            return false;
 //        }
-            return  trenutniMesec > this.registrovanDo;
+            return trenutniMesec > this.registrovanDo;
 
         }
 
@@ -111,9 +114,4 @@ public class Auto {
         }
 
     }
-
-
-
-
-
 

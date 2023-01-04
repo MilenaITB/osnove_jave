@@ -2,7 +2,7 @@ package p27_12_2022;
 
 import java.util.Scanner;
 
-//public class Zadatak2 {
+public class Zadatak2 {
 
     //  2.Zad
     //Krairti klasu SlackMessage koja ima:
@@ -26,23 +26,24 @@ import java.util.Scanner;
 
 //package p27_12_2022;
 
-public class Zadatak2 {
-    public static void main(String[] args) {
-        SlackMessage helloMsg = new SlackMessage();
-        helloMsg.text = "Hello!";
-        helloMsg.firstName = "Milan";
-        helloMsg.lastName = "Jovanovic";
-        helloMsg.createdAt = "26.08.2021 18:55";
+            public static void main(String[] args) {
+                SlackMessage helloMsg = new SlackMessage();
+                helloMsg.text = "Hello!";
+                helloMsg.firstName = "Milan";
+                helloMsg.lastName = "Jovanovic";
+                helloMsg.createdAt = "26.08.2021 18:55";
 
-        helloMsg.print();
+                helloMsg.print();
 
-        SlackMessage replayMsg = new SlackMessage();
-        replayMsg.text = "Hi!";
-        replayMsg.firstName = "Petar";
-        replayMsg.lastName = "Petrovic";
-        replayMsg.createdAt = "26.08.2021 18:55";
+                SlackMessage replayMsg = new SlackMessage();
+                replayMsg.text = "Hi!";
+                replayMsg.firstName = "Petar";
+                replayMsg.lastName = "Petrovic";
+                replayMsg.createdAt = "26.08.2021 18:55";
 
-        replayMsg.print();
+                replayMsg.print();
 
-    }
-}
+            }
+        }
+
+

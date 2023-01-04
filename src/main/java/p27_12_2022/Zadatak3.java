@@ -59,41 +59,50 @@ public class Zadatak3 {
 //                                                                   MOJE REŠAVANJE NA ČASU
 //      MILANOVO REŠENJE
 
+
+//  (Dopuna 3)
+//Dopuniti klasu Auto tako da ima:
+//atribut broj registracije
+//da li je ukljucena klima u autu
+//metodu dodajGas, koja povecava trenutnu brzinu za 10.
+//metodu koci, koja smanjuje brzinu za 10. Brzina ne moze da ode ispod nule.
+//metodu koja racuna i vraca trenutnu potrosnju auta. Metoda racuna po formuli:
+//faktor klime - ako je ukljucena klima faktor je 1.2, ako nije ukljucena onda je 1.0
+//(trenutna brzina / 100.0 * potrosnja na 100km) * faktor klime
+
     public static void main(String[] args) {
-        Auto bmw = new Auto();
-        bmw.marka = "BMW";
-        bmw.trenutnaBrzina = 100;
-        bmw.fabrickaPotrosnja = 10;
-        bmw.vozac = "Milan Jovanovic";
-        bmw.brojVrata = 5;
-        bmw.kubikaza = 2000;
-        bmw.registrovanDo = 10;
-        bmw.godinaProizvodnje = 1980;
 
-        bmw.stampaj();
-        if (bmw.prekoracenje(50)) {
-            System.out.println("Desilo se prekoracenje!");
-            System.out.println("Kazna je " + bmw.kazna(50));
-        } else {
-            System.out.println("Nema prekoracenja.");
+            Auto bmw = new Auto();
+            bmw.marka = "BMW";
+            bmw.trenutnaBrzina = 100;
+            bmw.fabrickaPotrosnja = 10;
+            bmw.vozac = "Milan Jovanovic";
+            bmw.brojVrata = 5;
+            bmw.kubikaza = 2000;
+            bmw.registrovanDo = 10;
+            bmw.godinaProizvodnje = 1980;
+
+            bmw.stampaj();
+            if (bmw.prekoracenje(50)) {
+                System.out.println("Desilo se prekoracenje!");
+                System.out.println("Kazna je " + bmw.kazna(50));
+            } else {
+                System.out.println("Nema prekoracenja.");
+            }
+
+            if (bmw.oldTimer()) {
+                System.out.println("Jeste oldtimer");
+            } else {
+                System.out.println("Nije oldtimer.");
+            }
+
+            if (bmw.isteklaRegistracija(12)) {
+                System.out.println("Istekla registracija");
+            } else {
+                System.out.println("Jos uvek je registrovan.");
+            }
+
+            System.out.println("Cena registracije " + bmw.cenaRegistracije());
+
         }
-
-        if(bmw.oldTimer()) {
-            System.out.println("Jeste oldtimer");
-        } else {
-            System.out.println("Nije oldtimer.");
-        }
-
-        if(bmw.isteklaRegistracija(12)) {
-            System.out.println("Istekla registracija");
-        } else {
-            System.out.println("Jos uvek je registrovan.");
-        }
-
-        System.out.println("Cena registracije " + bmw.cenaRegistracije());
-
     }
-}
-
-
-
