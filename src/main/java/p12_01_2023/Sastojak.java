@@ -9,7 +9,6 @@ public class Sastojak {
     public String naziv;
     public int cena;
 
-
     // geteri i seteri
 
     public String getNaziv() {
@@ -30,7 +29,11 @@ public class Sastojak {
         this.naziv = naziv;
         this.cena = cena;
     }
-    public void stampaj(){
+    //  metoda za štampu
+    public void stampaj() {
         System.out.println("Naziv: " + this.naziv + ", cena: " + this.cena);
     }
-}
+
+
+    }
+
