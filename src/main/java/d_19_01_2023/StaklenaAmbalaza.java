@@ -57,7 +57,7 @@ public class StaklenaAmbalaza extends Ambalaza {
     }
 
     //metoda stampaj stampa sve podatke iz klase staklena flasa.
-@Override
+
     public void stampaj() {
         System.out.println("Barkod: " + this.getBarkod());
         System.out.println("Naziv artikla: " + this.getNaziv());
